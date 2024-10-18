@@ -34,7 +34,7 @@ p{
     color: #555;
 }
 .container{
-    max-width: 1345px;
+    max-width: 1900px;
     margin: auto;
     padding-left: 25px;
     padding-right:25px;
@@ -340,7 +340,7 @@ a.search{
 }
 
 }
-@media only screen and (max-width:1600px){
+@media only screen and (max-width:2000px){
 .menu{
     /* display: block; */
 }
