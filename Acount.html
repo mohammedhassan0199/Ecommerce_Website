@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account - Shoptopia</title>
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body >        
+    <div class="container">
+    <div class="navbar" >
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" width="180px"></a>
+        </div>
+            <input type="text" placeholder="Search for product " class="search-bar">
+            <a class="search" href="">Search</a>
+        <nav>
+            <ul>
+                <li><a href="">signIn</a></li>
+            </ul>
+        </nav>
+       <a href="cart.html"> <img src="cart.png" width="30px" height="30px"></a>
+        <img src="menu.png" class="menu-icon" onclick="menuToggle()" style="cursor: pointer;">
+        <div class="menu">
+            <ul id="menu0">
+                
+                <b><li class="row row1">Footwear</li></b>
+                <li class="col"><a href="Mens_Footwear.html">Men's</a></li>
+                <li class="col"><a href="Womens_Footwear.html">Women's</a></li>
+                <b><li class="row row1">Clothing</li></b>
+                <li class="col"><a href="MensWear.html">Men's</a></li>
+                <li class="col"><a href="WomensWear.html">Women's</a></li>
+                <b><li class="row row1">Toys</li></b>
+                <li class="col"><a href="Toys.html">Soft Toy's</a></li>
+                <b><li class="row row1">Accesories</li></b>
+                <li class="col"><a href="Watch.html">Watchs</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- ---------account--------- -->
+
+<div class="account-page" >
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="image.jpg" style="height: 400px; width: 90%;" class="img1" >
+            </div>
+            <div class="col">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="indicator">
+                    </div>
+                    <form id="LoginForm">
+                        <input type="email" placeholder="enter email">
+                        <input type="password" placeholder="enter password">
+                        <button type="submit" class="btn">Login</button>
+                        <a href="">Forgot password</a>
+                    </form>
+
+                    <form id="RegForm">
+                        <input type="email" placeholder="enter email">
+                        <input type="password" placeholder="enter password">
+                        <input type="password" placeholder="confirm password">
+                        <button type="submit" class="btn">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download Our App</h3>
+          <p>Download App for Android and ios mobile phone.</p>
+          <div class="app-logo">
+            <img src="play-store.png" alt="" />
+            <img src="app-store.png" alt="" />
+          </div>
+        </div>
+  
+        <div class="footer-col-2">
+          <img src="logo_1.png" alt="" />
+          <p>
+            Our Purpose Is To Sustainably Make the Pleasure and Benefits of
+            Sports Accessible to the Many.
+          </p>
+        </div>
+  
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Coupons</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+          </ul>
+        </div>
+  
+        <div class="footer-col-4">
+          <h3>Follow us</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>YouTube</li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">Copyright &copy; 2023 - ShopTopia</p>
+    </div>
+  </div>
+<!-- js for toggle menu -->
+<script>
+    var MenuItem=document.getElementById('menu0');
+    MenuItem.style.maxHeight='0px';
+    
+    function menuToggle(){
+        if(MenuItem.style.maxHeight=='0px'){
+            MenuItem.style.maxHeight='150vh';
+        }
+         else {
+            MenuItem.style.maxHeight='0px';
+        }   
+        }
+</script>
+
+
+<!-- -------js for toggle form ----------- -->
+
+<script>
+
+var LoginForm = document.getElementById('LoginForm');
+var RegForm = document.getElementById('RegForm');
+var Indicator = document.getElementById('indicator');
+
+function register(){
+    RegForm.style.transform = "translateX(0px)";
+    LoginForm.style.transform = "translateX(0px)";
+    Indicator.style.transform = "translateX(100px)";
+}
+
+function login(){
+
+    RegForm.style.transform = "translateX(300px)";
+    LoginForm.style.transform = "translateX(300px)";
+    Indicator.style.transform = "translateX(0px)";
+}
+
+</script>
+
+</body>
+</html>

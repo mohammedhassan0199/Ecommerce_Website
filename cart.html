@@ -1,0 +1,171 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoptopia cart</title>
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body >        
+    <div class="container">
+    <div class="navbar" >
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" width="180px"></a>
+        </div>
+            <input type="text" placeholder="Search for product " class="search-bar">
+            <a class="search" href="">Search</a>
+        <nav>
+            <ul>
+                <li><a href="Acount.html">signIn</a></li>
+            </ul>
+        </nav>
+        <img src="cart.png" width="30px" height="30px">
+        <img src="menu.png" class="menu-icon" onclick="menuToggle()" style="cursor: pointer;">
+        <div class="menu">
+            <ul id="menu0">
+               
+                <b><li class="row row1">Footwear</li></b>
+                <li class="col"><a href="Mens_Footwear.html">Men's</a></li>
+                <li class="col"><a href="Womens_Footwear.html">Women's</a></li>
+                <b><li class="row row1">Clothing</li></b>
+                <li class="col"><a href="MensWear.html">Men's</a></li>
+                <li class="col"><a href="WomensWear.html">Women's</a></li>
+                <b><li class="row row1">Toys</li></b>
+                <li class="col"><a href="Toys.html">Soft Toy's</a></li>
+                <b><li class="row row1">Accesories</li></b>
+                <li class="col"><a href="Watch.html">Watchs</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!------------cart items details------------>
+
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Total price</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="mens wear/t-shirt/ts11.jpg" >
+                    <div>
+                        <h3>MICHEIF MONKEY</h3>
+                        <p>Regular Fit Graphic Print Crew-Neck T-Shirt</p>
+                        <small>Price: ₹399</small><br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>₹399</td>
+            
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="mens wear/shirt/shirt11.jpg" >
+                    <div>
+                        <h3>LEE COPER</h3>
+                        <p>Washed Denim Shirt with Flap Pockets</p>
+                        <small>Price: ₹660</small><br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>₹660</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="sport shoes/sport52.jpg" >
+                    <div>
+                        <h3>ASSIAN</h3>
+                        <p>Men White Mesh Running Non-Marketing Shoes</p>
+                        <small>Price: ₹750</small><br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>₹750</td>
+        </tr>
+    </table>
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>₹1509</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>₹120</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>₹1729</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+</div>
+<!-- footer -->
+<div class="footer" style="margin-top: 50px;">
+    <div class="container" >
+        <div class="row">
+
+            <div class="footer-col-1" >
+                <img src="logo.png" width="180px">
+                <p>Our purpose is to sustainably make the pleasure and 
+                    benefits of product.
+                </p>
+            </div>
+            <div class="footer-col-2" style="text-align: center;">
+               <h3>Useful Links</h3>
+               <ul>
+                <li>Coupons</li>
+                <li>Return Policy</li>
+               </ul>
+            </div>
+            <div class="footer-col-3" style="text-align: center;">
+                <h3>Follow us</h3>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+            </ul>
+        </div>
+        </div>
+        <hr>
+        <p class="copyright">2022-2023, shoptopia.com, Inc. or its affiliates </p>
+    </div>
+</div>
+<!-- js for toggle menu -->
+<script>
+    var MenuItem=document.getElementById('menu0');
+    MenuItem.style.maxHeight='0px';
+    
+    function menuToggle(){
+        if(MenuItem.style.maxHeight=='0px'){
+            MenuItem.style.maxHeight='150vh';
+        }
+         else {
+            MenuItem.style.maxHeight='0px';
+        }   
+           
+        }
+</script>
+
+</body>
+</html>
+</body>
+</html>
